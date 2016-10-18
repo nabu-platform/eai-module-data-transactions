@@ -25,4 +25,8 @@ public class DataTransactionGUIManager extends BaseJAXBGUIManager<DataTransactio
 		return new DataTransactionArtifact(entry.getId(), entry.getContainer(), entry.getRepository());
 	}
 
+	@Override
+	public String getCategory() {
+		return "Frameworks";
+	}
 }
