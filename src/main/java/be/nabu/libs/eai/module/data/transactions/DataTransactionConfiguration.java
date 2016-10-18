@@ -2,12 +2,16 @@ package be.nabu.libs.eai.module.data.transactions;
 
 import java.util.TimeZone;
 
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 import be.nabu.eai.repository.jaxb.ArtifactXMLAdapter;
 import be.nabu.eai.repository.jaxb.TimeZoneAdapter;
 import be.nabu.libs.artifacts.api.DataSourceProviderArtifact;
 
+@XmlRootElement(name = "dataTransactionProvider")
+@XmlType(propOrder = { "datasource", "timezone" })
 public class DataTransactionConfiguration {
 	private DataSourceProviderArtifact datasource;
 	private TimeZone timezone;
