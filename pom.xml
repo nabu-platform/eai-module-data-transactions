@@ -68,12 +68,6 @@
 			<artifactId>resources-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		
-		<dependency>
-			<groupId>nabu</groupId>
-			<artifactId>eai-module-datastore</artifactId>
-			<scope>provided</scope>
-		</dependency>
 	</dependencies>
 
 </project>
